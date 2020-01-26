@@ -9,7 +9,7 @@ export default function(WrappedComponent) {
     constructor() {
       super();
 
-      const isLandscape = isOrientationLandscape(Dimensions.get('window'));
+      const isLandscape = isOrientationLandscape(Dimensions.get('screen'));
       this.state = { isLandscape };
     }
 
